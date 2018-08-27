@@ -9,19 +9,24 @@
     <script>
         //erklæring af variablerne lenght, width og areal
         let lenght = 3,
-            width = 5;
+            width = 5,
+            areal;
 
         //udregn areal
         areal = lenght * width;
 
-
+        //Hvis arealet er under 100
         if (areal < 100) {
             console.log("Arealet er for lille");
+        }
 
-        } else if (areal >= 100 && areal < 200) {
+        //Hvis arealet er under 200
+        else if (areal < 200) {
             console.log("Arealet er passende");
+        }
 
-        } else if (areal >= 200) {
+        //Hvis arealet er 200 eller over
+        else {
             console.log("Arealet er for stort");
         }
     </script>
